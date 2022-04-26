@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es-ES" dir="ltr"> <!--defino el lenguaje de mi App y la direccion del texto LeftToRight -->
+<head>
+    <meta charset="utf-8">
+    <title> ToDo List - Isa C</title>
+    <link rel="shortcut icon" href="/memojifav.ico">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale1.0">
+
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.5/css/unicons.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <script src="https://cdn.jsdelivr.net/gh/bigdatacloudapi/js-reverse-geocode-client@latest/bigdatacloud_reverse_geocode.min.js" type="text/javascript"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="task-input">
+            <img src="list-ul.svg" alt="icon">
+            <!-- <i class="uil uil-list-ul"></i> -->
+            <input type="text" placeholder="Agregar una nueva tarea">
+        </div>
+        <div class="controls">
+            <div class="filters">
+                <!--inline container element-->
+                <span id="Todo" class="active">Todo</span>
+                <span id="Pendiente">Pendiente</span>
+                <span id="Completado">Completado</span>
+            </div>
+            <button class="clear-btn"><i class="uil uil-trash-alt"></i>Eliminar todo</button>
+        </div>
+        <div class="dayTime">
+            
+            <p><i class="uil uil-calendar-alt"></i></p>
+            <p id='time'></p>
+            <p id='day'></p>
+            <p id='date'></p>
+        </div>
+        <div class="cityWeather">
+            <span><i class="uil uil-location-pin-alt"></i></span>
+            <span id="City">Cargando...
+                <!-- <img src="loading.gif" alt="this slowpoke moves"  width=25px/> -->
+            </span>
+            <span><i id="weatherIcon" class=""></i></span>
+            <span id="Weather"></span>
+        </div>
+         <!--Unorder list elements-->
+        <ul class="task-box">
+        </ul>
+        <footer>
+            &#169; ToDo List - Isa C
+            <!-- <i class="uil uil-grin-tongue-wink"></i>   -->
+            <i class='fa fa-hand-peace-o'></i>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+    
+
+</body>
+</html>
