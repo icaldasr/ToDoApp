@@ -5,7 +5,7 @@
 - If you check a task, it will be marked as "Completed".
 - Tasks are separated into the "Pending" section, where the tasks that have not been marked with the "check" and "Completed" are located. 
 - All existing tasks can be deleted.
-
+- ToDoApp uses localstorage, so if you don't delete the task eaven if you refresh the page all the tasks going to be there.
 ## APIs
 
 - OpenWeatherAPI, get the weather by the latitude and longitude.
